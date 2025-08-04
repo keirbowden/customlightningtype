@@ -1,0 +1,11 @@
+<template>
+    <c-slider-integer onvaluechange={slidervaluechange}></c-slider-integer>
+    <lightning-card>
+        <div class="slds-var-p-around_small">
+            Selected value={slidervalue}
+        </div>
+    </lightning-card>
+    <div class="slds-var-p-top_medium"></div>
+    <c-limit-consumption value={value}></c-limit-consumption>
+
+</template>

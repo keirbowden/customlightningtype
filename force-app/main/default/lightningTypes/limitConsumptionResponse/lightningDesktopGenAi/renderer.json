@@ -1,0 +1,12 @@
+{
+    "collection": {
+      "renderer": {
+        "componentOverrides": {
+          "$": {
+            "definition": "c/limitConsumption"
+          }
+        }
+      }
+    }
+  }
+  

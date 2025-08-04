@@ -1,0 +1,5 @@
+{
+  "title": "Limit Consumption",
+  "description": "Overview of limit consumption by a particular piece of Apex code",
+  "lightning:type": "@apexClassType/c__LimitConsumptionOverview$LimitConsumption"
+}

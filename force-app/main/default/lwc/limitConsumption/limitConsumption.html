@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Limits Consumption" icon-name="standard:travel_mode">
+        <lightning-tabset>
+            <lightning-tab label="CPU">
+            <div class="slds-var-p-around_medium">
+                <canvas lwc:dom="manual" lwc:ref="canvas" class="chart"></canvas>
+            </div>
+            </lightning-tab>
+            <lightning-tab label="Heap" title="2nd tab extended title">
+                <div class="slds-var-p-around_medium">
+                    <template for:each={snapshots} for:item="snapshot">
+                        <div key={snapshot.name}>{snapshot.name} : {snapshot.heap} Kb</div>
+                    </template>
+                </div>
+            </lightning-tab>
+        </lightning-tabset>
+    </lightning-card>
+</template>
